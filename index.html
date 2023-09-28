@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Group 3</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+    h1 {
+      text-align: center;
+	  font-size: 6vw;
+    }
+	
+	li {
+		font-size: 2vw;
+	}
+	
+	
+	body.dark-mode {
+      background-color: black;
+      color: white;
+    }
+	
+	.toggle-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+	
+	p {
+		font-size: 2vw;
+		text-align: left;
+	}
+	
+	
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.col {
+		flex: 1;
+	}
+	
+	.col-1 {
+		order: 2;
+	}
+	
+	.col-2 {
+		order: 1;
+	}
+  </style>
+  
+</head>
+<body>
+	<h1>Group 3</h1>
+	<hr></hr>
+	<div class="row">
+		<div class="col col-2">
+			<h2>Group Members</h2>
+			<ul>
+				<li>Julian Wright - V00971870</li>
+				<li>Jack Dewey - V00972159</li>
+				<li>Long Le - V00943754</li>
+				<li>Yue Zhang - V01014347</li>
+				<li>Name5 - V00XXXXXX</li>
+				<li>Name6 - V00XXXXXX</li>
+				<li>Name7 - V00XXXXXX</li>
+			</ul>
+		</div>
+		<div class="col col-1">
+			<h2>Discription</h2>
+			<p>
+				To reduce the number of objects you carry everyday we plan to add the remote unlock feature of many keyfobs to your phone or Apple watch. 
+				This will be done trough an app and an easy to install kit that can be given to autoshops.
+			</p>
+		</div>
+	</div>
+	<button class="toggle-btn" onclick="toggleDarkMode()"><i class="fa fa-lightbulb-o"></i> Dark Mode</button>
+  
+  <script>
+    function toggleDarkMode() {
+      var body = document.body;
+      body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
